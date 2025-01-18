@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="CSS/styles.css">
+      <title>Booleans</title>
+   </head>
+   <body>
+      <script>
+         console.log(3 < 5);
+         console.log(typeof 'true');  // string.
+         console.log(typeof true);  // boolean.
+
+         // if-else-if-else statement 
+         // 1st.
+         if (true) {
+            if (30 >= 16) {
+               console.log('You can drive!');
+            } else {
+               console.log('You cannot drive!');
+            }
+               console.log('hello world!');
+         } else {
+            console.log('It is wrong!');
+         }
+
+         // 2nd.
+         const age = 15;
+         if (age >= 16) {
+            console.log('You can drive!');
+            console.log('congratulations!');
+         } else if (age >= 14) {
+            console.log('Almost there!');
+         } else {
+            console.log('You cannot drive!');
+         }
+
+         console.log(true && true);
+         console.log(true && false);
+         console.log(false && false);
+
+         console.log(true || true);
+         console.log(true || false);
+         console.log(false || false);
+
+         if (5) {
+            console.log('truthy');  // true
+         }
+
+         if (0) {
+            console.log('truthy');  // false
+         }
+
+         const cartQuantity = 5;
+         if (cartQuantity) {  // instead of cartQuanty > 0 
+         // we can just use cartQuantity which is a truthy value.
+         // falsy values => 0, '', NaN, undefined, null.
+            console.log('cart has product');
+         }
+         console.log(!0); // true
+
+         // ternary operators.
+         const result = 0 ? 'truthy' : 'falsy';
+         console.log(result); // falsy because o is a falsy value.
+
+      </script>
+   </body>
+</html>
