@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Exercises</title>
+      <style>
+         body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5rem;
+         }
+      </style>
+   </head>
+   <body>
+
+      <script>
+         // 11.a
+         const nums = [10, 20, 30];
+         nums.splice(2, 99);
+         console.log(nums);
+
+         // 11.b
+         function getLastValue(array) {
+            lastIndex = array.length - 1;
+            console.log(array[lastIndex]);
+         }
+         getLastValue([1, 20, 22, 24, 5]);
+         getLastValue(['hi', 'hello', 'good']);
+
+         // 11.c
+         function arraySwap(array) {
+            let temp = array[0];
+            array[0] = array[array.length - 1];
+            array[array.length - 1] = temp;
+            console.log(array);
+         }
+         arraySwap([1, 20, 22, 24, 5]);
+         arraySwap(['hi', 'hello', 'good']);
+
+         // 11.d
+         function countByTwo() {
+            for (let i = 0; i <= 10; i += 2) {
+               console.log(i);
+            }
+         }
+         countByTwo();
+
+         // 11.e
+         for (let i = 5; i >=0; i--) {
+            console.log(i);
+         }
+
+         // 11.f
+         const newArray = [];
+         const myArray = [7, 8, 9];
+         for (let i = 0; i < myArray.length; i++) {
+            newArray.push(myArray[i] + 1);
+         }
+         console.log(newArray);
+
+         // 11.g
+         function addOne(array) {
+            let incrementarray = [];
+            for (let i = 0; i < array.length; i++) {
+               incrementarray.push(array[i] + 1);
+            }
+            console.log(incrementarray);
+         }
+         addOne([1, 2, 3]);
+         addOne([-2, -1, 0, 99]);
+      </script>     
+   </body>
+</html>
