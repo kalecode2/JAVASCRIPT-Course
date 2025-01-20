@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>advanced Functions</title>
+   </head>
+   <body>
+      <script>
+         function greetings() {
+            console.log('Hello');
+         }
+         greetings(); 
+
+         const num = 2;
+
+         const function1 = function() {
+            console.log('hello1');
+         };     
+         console.log(function1);
+         console.log(typeof function1);
+         function1();
+
+         const object1 = {
+            num: 2,
+            fun: function greetings() {
+               console.log('hello2');
+            }
+         };
+         object1.fun();
+
+         function display(param) {
+            console.log(param);
+         }
+         display(2);
+
+         function run(param) {
+            param();
+         }
+         run(function() {
+            console.log('hello3');
+         })
+
+         // setTimeOut() helps running a function in the future.
+         setTimeout(function() {
+            console.log('time out');
+         }, 3000);  // it takes 3000ms or 3s to print the string time out.
+         console.log('NEXT LINE');
+
+         // setInterval()
+         setInterval(function() {
+               console.log('Interval');
+         }, 3000);
+         console.log('next line');
+      </script>
+   </body>
+</html>

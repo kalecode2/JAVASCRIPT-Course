@@ -67,9 +67,57 @@
          }
 
          const array1 = [1, 2, 3];
-         const array2 = array1;
+         const array2 = array1.slice();
          array2.push(4);
+         console.log(array1);
          console.log(array2);
+
+         const [firstvalue, secondValue] = [1, 2, 3];
+
+         for (let j = 1; j <= 10; j++) {
+            if (j % 3 === 0) {
+               continue;
+            }
+            console.log(j);
+            if (j === 8) {
+               break;
+            }
+         }
+
+         let k = 1;
+         while(k <= 10) {
+            if (k % 3 === 0) {
+               k++;
+               continue;
+            }
+            console.log(k);
+            k++
+         }
+
+         /* const myNumsDoubled = [];
+         function doubleArray(myNums) {
+            for (let l = 0; l < myNums.length; l++) {
+               const num = myNums[l];
+               myNumsDoubled.push(num * 2);
+            }
+            return doubleArray;
+         }
+         console.log(doubleArray([4, 5, 6])); // [8, 10, 12].  */
+
+         const myNumsDoubled = [];
+         function doubleArray(myNums) {
+            for (let l = 0; l < myNums.length; l++) {
+               const num = myNums[l];
+               if (num === 0) {
+                  return myNumsDoubled;
+               }
+               myNumsDoubled.push(num * 2);
+            }
+            return myNumsDoubled;
+         }
+         console.log(doubleArray([4, 5, 6]));  // [8, 10, 12] both fucntion do the same thing.
+         console.log(doubleArray([1, 2, 3, 0, 4, 5]));
+
       </script>
    </body>
 </html>
